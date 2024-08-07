@@ -56,6 +56,15 @@
     padding: 20px 30px;
     background: #0000ff;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+    transition: .5s ease;
+  }
+
+  .password-input:focus ~ .password-checklist{
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .checklist-title{
